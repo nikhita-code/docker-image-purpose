@@ -1,0 +1,17 @@
+ 58  git clone https://github.com/nikhita-code/docker-image-purpose.git
+   59  ls -ltr
+   60  cd docker-image-purpose/
+   61  ls -ltr
+   62  docker build -t nodejs-app .
+   63  docker images
+   64  docker run -d -p 3000:80 nodejs-app ( host 3000 : container 80 but showing content of container to all we have to map container port to host)
+   65  docker ps -a
+   66  docker logs bf07a709ca0f
+   67  docker ps -a
+   68  docker stop bf07a709ca0f
+   69  docker ps -a
+   70  ls -ltr
+   71  docker images
+   72  docker run -d -p 3000:3000 nodejs-app (correct makking it will expose to the world)
+   73  docker ps -a
+   74  history
